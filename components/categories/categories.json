@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_categories_categories",
+  "info": {
+    "name": "categories",
+    "icon": "align-center",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "taxes": {
+      "type": "string"
+    },
+    "subcategories": {
+      "type": "component",
+      "repeatable": true,
+      "component": "categories.subcategories"
+    },
+    "product": {
+      "type": "component",
+      "repeatable": true,
+      "component": "categories.product"
+    },
+    "inventory": {
+      "type": "boolean"
+    }
+    
+  }
+}

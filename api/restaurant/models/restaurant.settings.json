@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "restaurants",
   "info": {
-    "name": "Restaurant",
+    "name": "stores",
     "description": ""
   },
   "options": {
@@ -111,6 +111,18 @@
       "type": "component",
       "repeatable": false,
       "component": "commission.commission"
+    },
+    "components": {
+      "type": "dynamiczone",
+      "components": []
+    },
+    "products": {
+      "via": "restaurant",
+      "collection": "product"
+    },
+    "category": {
+      "model": "category",
+      "via": "stores"
     }
   }
 }

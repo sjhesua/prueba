@@ -1,0 +1,78 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "product",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "decimal",
+      "required": true
+    },
+    "minimumQuantityToOrder": {
+      "type": "biginteger",
+      "required": true
+    },
+    "maximumQuantityPerOrder": {
+      "type": "biginteger"
+    },
+    "costPrice": {
+      "type": "string"
+    },
+    "sku": {
+      "type": "string"
+    },
+    "discount": {
+      "type": "enumeration",
+      "enum": [
+        "none"
+      ]
+    },
+    "orderPreparationTime": {
+      "type": "biginteger"
+    },
+    "inventory": {
+      "type": "boolean"
+    },
+    "markProductAsSideOrder": {
+      "type": "boolean"
+    },
+    "description": {
+      "type": "text"
+    },
+    "longDescription": {
+      "type": "text"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "sub_categories": {
+      "collection": "sub-categories",
+      "via": "product"
+    },
+    "restaurant": {
+      "via": "products",
+      "model": "restaurant"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_categories_subcategories",
+  "info": {
+    "name": "subcategories",
+    "icon": "angle-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "taxes": {
+      "type": "string"
+    },
+    "product": {
+      "type": "component",
+      "repeatable": true,
+      "component": "categories.product"
+    }
+  }
+}

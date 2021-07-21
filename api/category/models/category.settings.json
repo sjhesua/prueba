@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "name": "category",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "categories": {
+      "type": "component",
+      "repeatable": true,
+      "component": "categories.categories"
+    },
+    "stores": {
+      "via": "category",
+      "collection": "restaurant"
+    }
+  }
+}

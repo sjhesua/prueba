@@ -1,0 +1,67 @@
+{
+  "collectionName": "components_categories_subcategories_product",
+  "info": {
+    "name": "product",
+    "icon": "angle-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "decimal",
+      "required": true
+    },
+    "minimumQuantityToOrder": {
+      "type": "biginteger",
+      "required": true,
+      "default": "1"
+    },
+    "maximumQuantityPerOrder": {
+      "type": "biginteger",
+      "default": "0"
+    },
+    "costPrice": {
+      "type": "string"
+    },
+    "sku": {
+      "type": "string"
+    },
+    "discount": {
+      "type": "enumeration",
+      "enum": [
+        "none"
+      ]
+    },
+    "orderPreparationTime": {
+      "type": "biginteger"
+    },
+    "inventory": {
+      "type": "boolean"
+    },
+    "markProductAsSideOrder": {
+      "type": "boolean"
+    },
+    "description": {
+      "type": "text"
+    },
+    "longDescription": {
+      "type": "text"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

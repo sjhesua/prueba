@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_weekday_sundays",
+  "info": {
+    "name": "sunday",
+    "icon": "calendar",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "sunday": {
+      "type": "enumeration",
+      "enum": [
+        "OpenAllDay",
+        "ClosedAllDay",
+        "SpecificTime"
+      ]
+    },
+    "startTime": {
+      "type": "time"
+    },
+    "endTime": {
+      "type": "time"
+    },
+    "maximumOrderPerSlot": {
+      "type": "biginteger"
+    }
+  }
+}

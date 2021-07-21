@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_scheduling_schedulings",
+  "info": {
+    "name": "scheduling",
+    "icon": "book"
+  },
+  "options": {},
+  "attributes": {
+    "onDemand": {
+      "type": "boolean",
+      "default": false
+    },
+    "scheduling": {
+      "type": "boolean",
+      "default": true
+    },
+    "slotInterval": {
+      "type": "biginteger"
+    }
+  }
+}

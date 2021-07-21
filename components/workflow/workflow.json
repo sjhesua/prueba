@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_workflow_workflows",
+  "info": {
+    "name": "workflow",
+    "icon": "atlas"
+  },
+  "options": {},
+  "attributes": {
+    "businessModel": {
+      "type": "boolean",
+      "default": false
+    },
+    "schedulingType": {
+      "type": "enumeration",
+      "enum": [
+        "ServiceLevelScheduling",
+        "OrderLevelScheduling"
+      ]
+    },
+    "OneBookingPerTimeSlot": {
+      "type": "boolean",
+      "default": false
+    },
+    "multipleProductsServicesInSingleCart": {
+      "type": "boolean",
+      "default": false
+    },
+    "productMultiselection": {
+      "type": "boolean",
+      "default": true
+    },
+    "URL": {
+      "type": "string"
+    }
+  }
+}
