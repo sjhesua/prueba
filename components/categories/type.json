@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_categories_subcategories_product_variants_type",
+  "info": {
+    "name": "type",
+    "icon": "angle-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    }
+  }
+}

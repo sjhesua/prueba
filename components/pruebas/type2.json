@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_pruebas_type2s",
+  "info": {
+    "name": "type2",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "SINGLE_SELECT",
+        "MULTI_SELECT"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    }
+  }
+}

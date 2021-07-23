@@ -11,10 +11,26 @@
       "type": "string"
     },
     "description": {
-      "type": "string"
+      "type": "text"
     },
     "taxes": {
-      "type": "string"
+      "type": "enumeration",
+      "enum": [
+        "Labor_fee",
+        "Taxes_fees"
+      ]
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     },
     "subcategories": {
       "type": "component",

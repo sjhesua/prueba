@@ -73,6 +73,14 @@
     "restaurant": {
       "via": "products",
       "model": "restaurant"
+    },
+    "variants_2": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pruebas.variants-2"
+    },
+    "sddsasadsadsad": {
+      "type": "text"
     }
   }
 }

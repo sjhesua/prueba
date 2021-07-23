@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_pruebas_variants_2s",
+  "info": {
+    "name": "variants_2",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "type2": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pruebas.type2"
+    }
+  }
+}
